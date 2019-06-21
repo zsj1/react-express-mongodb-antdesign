@@ -1,0 +1,72 @@
+.error-msg {
+  color: #f50;
+  padding-left: 10px;
+}
+.am-tab-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  /* TabBar挡住了，所以点击无效 */
+  z-index: -1;
+}
+.fixd-header.am-navbar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  width: 100%;
+  color: #fff;
+}
+.page-content {
+  padding: 45px 5px;
+}
+
+#chat-page .chat-me .am-list-extra {
+  flex-basis: auto;
+}
+#chat-page .chat-me .am-list-content {
+  padding-right: 15px;
+  text-align: right;
+}
+#chat-page .am-grid-icon {
+  display: none;
+}
+#chat-page .am-grid-text {
+  margin-top: 0;
+}
+.stick-footer {
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.search-header {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  top: 45px;
+  text-align: center;
+  background-color: #fff;
+  z-index: 9998;
+  margin-bottom: 0
+}
+.sort-nav .am-navbar-right {
+  margin-left: auto;
+  flex: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.table-operations {
+  margin-bottom: 16px;
+}
+
+.table-operations > button {
+  margin-right: 8px;
+}
