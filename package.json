@@ -143,7 +143,7 @@
     ],
     "watchPlugins": [
       "/Users/silver/Desktop/github/react-express-mongodb-antdesign/node_modules/jest-watch-typeahead/filename.js",
-      "/Users/silver/Desktop/github/react-express-mongodb-antdesign/node_modules/jest-watch-typeahead/testname.js",
+      "/Users/silver/Desktop/github/react-express-mongodb-antdesign/node_modules/jest-watch-typeahead/testname.js"
     ]
   },
   "devDependencies": {
