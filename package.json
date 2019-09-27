@@ -142,8 +142,8 @@
       "node"
     ],
     "watchPlugins": [
-      "C:\\Users\\dell\\Desktop\\信息实训课相关\\imooc\\node_modules\\jest-watch-typeahead\\filename.js",
-      "C:\\Users\\dell\\Desktop\\信息实训课相关\\imooc\\node_modules\\jest-watch-typeahead\\testname.js"
+      "/Users/silver/Desktop/github/react-express-mongodb-antdesign/node_modules/jest-watch-typeahead/filename.js",
+      "/Users/silver/Desktop/github/react-express-mongodb-antdesign/node_modules/jest-watch-typeahead/testname.js",
     ]
   },
   "devDependencies": {
