@@ -138,6 +138,7 @@ export function deteleObject(obj) {
             stringify[str] = true;
         }
     }
+    // eslint-disable-next-line
     uniques = uniques;
     return uniques;
 }

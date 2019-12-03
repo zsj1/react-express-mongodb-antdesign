@@ -97,16 +97,15 @@ Router.post("/postques", function(req, res){
   if (!userid) {
     return res.json({ code: 1, msg:"处理过程出错" });
   }
-  fs.stat("./image/" + userid, function(err, stat) {
+  fs.stat("../image/" + userid, function(err, stat) {
     if (!(stat && stat.isDirectory())) {
-      fs.mkdir("./image/" + userid, function(err) {});
+      fs.mkdir("../image/" + userid, function(err) {});
     }
   });
   const { image, question, addition } = req.body;
-  // console.log(image,question, addition)
   if (image.length > 0) {
-    const path = `./image/${userid}/`;
-    let buffer = new Buffer(image[0].imgData, "base64");
+    const path = `../image/${userid}/`;
+    let buffer = Buffer.from(image[0].imgData, "base64");
     fs.writeFile(path + image[0].imgName, buffer,  function(err) {
       if (err) {
         console.log("处理过程出错！");
@@ -153,10 +152,10 @@ Router.get("/getmsglist", function(req, res) {
 Router.post('/readmsg', function(req, res) {
   const userid = req.cookies.userid;
   const {from} = req.body;
-  Chat.update(
+  Chat.updateMany(
     {from, to: userid}, 
     {'$set': {read: true}},
-    {'multi': true},
+    // {'multi': true},
     function(err, doc){
       // console.log(doc);
       if (!err) {

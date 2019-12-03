@@ -72,7 +72,7 @@ class User extends React.Component{
 							multipleLine
 						>
 							{this.props.user.title}
-							{this.props.user.desc.split('\n').map(v=><Brief key={v}>{v}</Brief>)}
+							{this.props.user.desc ? this.props.user.desc.split('\n').map(v=><Brief key={v}>{v}</Brief>) : null}
 							{this.props.user.money?<Brief>薪资:{this.props.user.money}</Brief>:null}
 						</Item>
 					</List>
