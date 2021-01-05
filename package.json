@@ -11,7 +11,7 @@
     "antd": "^3.16.3",
     "antd-mobile": "^2.2.11",
     "asset-require-hook": "^1.2.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "9.0.0",
     "babel-jest": "23.6.0",
